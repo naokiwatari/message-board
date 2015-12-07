@@ -16,12 +16,21 @@
         <%= f.text_field :name, class: "form-control", placeholder: "名前を記入ください" %>
     </div>
   </div>
+  
+  <div class="form-group">
+    <label for="message_age" class="col-sm-1 control-label">年齢 :</label>
+    <div class="col-sm-2">
+        <%= f.number_field :age, class: "form-control", placeholder: "年齢を記入ください" %>
+    </div>
+  </div>
+  
   <div class="form-group">
     <label for="message_body" class="col-sm-1 control-label">内容 :</label>
     <div class="col-sm-11">
         <%= f.text_area :body, class: "form-control", placeholder: "メッセージを記入ください" %>
     </div>
   </div>
+  
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-11">
       <%= f.submit class: "btn btn-sm btn-primary" %>
